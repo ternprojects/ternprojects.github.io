@@ -8,7 +8,8 @@ html
 
 body
 	background-color: #ccc
-    
+
+  
 .container
 	display: flex
 	max-width: 960px
@@ -16,6 +17,7 @@ body
 	margin: 20px auto 
 	justify-content: space-between
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1)
+    //profile side     
 	.profile
 		/* max-width: 350px */
 		flex-basis: 35%
@@ -130,18 +132,19 @@ body
 				width: 102px
 				margin-left: 20px
 
+    //sesume side 
 	.resume
 		padding: 25px 30px 
 		flex-basis: 63%
 		background-color: #fff    
 		&_wrap
 			border: 1px solid rgba(168, 168, 168, 0.44)
-			padding: 36px 56px
+			padding: 20px 56px
 			min-height: 100%
 			.logo
 				display: flex
 				justify-content: center
-				margin-bottom: 38px
+				margin-bottom: 30px
 				&_img  				 
 					font-weight: 600       
 					width: 90px
@@ -174,17 +177,17 @@ body
 					margin-bottom: 10px
 
 		.about
-			padding-bottom: 30px
+			padding-bottom: 25px
 			text-align: center
 			border-bottom: 2px solid #e0e0e0
-			margin-bottom: 40px
+			margin-bottom: 25px
 			.name
 				font-size: 18px
 				letter-spacing: 11px
 				margin-bottom: 10px				
 			.position
 				display: inline-block
-				font-size: 9px
+				font-size: 10px
 				text-transform: uppercase	
 				color: #808080
 				margin-bottom: 20px				
@@ -201,9 +204,9 @@ body
 		.heading_dark	
 			font-size: 16px
 			font-weight: 400
-			border-bottom: 2px solid #e0e0e0
+			/* border-bottom: 2px solid #e0e0e0 */
 			padding-bottom: 24px
-			margin-bottom: 38px			
+			/* margin-bottom: 38px	 */		
 			font-weight: 700
 
 		.list
@@ -214,7 +217,7 @@ body
 				padding-left: 40px
 				/*30*/
 				padding-bottom: 0px
-				margin-bottom: 30px
+				margin-bottom: 15px
 				border-bottom: 2px dashed #ececec
 			&_item:before
 				content: ''
@@ -239,10 +242,9 @@ body
 				margin-top: 20px
 			
 		.list_item_non_border
-			border: none
-		
-		.heading_skills
-			margin-bottom: 48px
+			border: none		
+		/* .heading_skills
+			margin-bottom: 48px */		
 		.skills_list
 			list-style-type: none
 			padding-left: 0
@@ -269,6 +271,7 @@ body
 						width: 90%
 					&_50:before					
 						width: 50%
+
 /* button with projects*/
 .wrap
 	text-align: center
@@ -329,6 +332,7 @@ body
 	&:hover span:before
 		opacity: 0
 
+//"styling text about myself"
 .cite
 	padding: 5px 0 0 5px 
 	background: #f5f5f5
@@ -336,4 +340,8 @@ body
 	font-style: italic
 	font-size: 12px
 	text-indent: 1.5em
+
+.border
+	display: block
+	border-bottom: 2px dashed #e0e0e0
 

@@ -210,11 +210,13 @@ body {
   -ms-flex-preferred-size: 63%;
       flex-basis: 63%;
   background-color: #fff;
+  /* .heading_skills
+			margin-bottom: 48px */
 }
 
 .container .resume_wrap {
   border: 1px solid rgba(168, 168, 168, 0.44);
-  padding: 36px 56px;
+  padding: 20px 56px;
   min-height: 100%;
 }
 
@@ -225,7 +227,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .container .resume_wrap .logo_img {
@@ -282,10 +284,10 @@ body {
 }
 
 .container .resume .about {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   text-align: center;
   border-bottom: 2px solid #e0e0e0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .container .resume .about .name {
@@ -296,7 +298,7 @@ body {
 
 .container .resume .about .position {
   display: inline-block;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   color: #808080;
   margin-bottom: 20px;
@@ -319,9 +321,9 @@ body {
 .container .resume .heading_dark {
   font-size: 16px;
   font-weight: 400;
-  border-bottom: 2px solid #e0e0e0;
+  /* border-bottom: 2px solid #e0e0e0 */
   padding-bottom: 24px;
-  margin-bottom: 38px;
+  /* margin-bottom: 38px	 */
   font-weight: 700;
 }
 
@@ -335,7 +337,7 @@ body {
   padding-left: 40px;
   /*30*/
   padding-bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border-bottom: 2px dashed #ececec;
 }
 
@@ -370,10 +372,6 @@ body {
 
 .container .resume .list_item_non_border {
   border: none;
-}
-
-.container .resume .heading_skills {
-  margin-bottom: 48px;
 }
 
 .container .resume .skills_list {
@@ -511,6 +509,11 @@ body {
   font-style: italic;
   font-size: 12px;
   text-indent: 1.5em;
+}
+
+.border {
+  display: block;
+  border-bottom: 2px dashed #e0e0e0;
 }
 
 @media (max-width: 1024px) {
