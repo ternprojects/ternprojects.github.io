@@ -504,6 +504,15 @@ body {
   opacity: 0;
 }
 
+.cite {
+  padding: 5px 0 0 5px;
+  background: #f5f5f5;
+  border-left: 2px solid #ccc;
+  font-style: italic;
+  font-size: 12px;
+  text-indent: 1.5em;
+}
+
 @media (max-width: 1024px) {
   .container {
     width: 90%;
