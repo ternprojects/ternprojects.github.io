@@ -288,6 +288,12 @@ body {
   text-align: center;
   border-bottom: 2px solid #e0e0e0;
   margin-bottom: 25px;
+  /* /* .about_address
+				font-size: 13px
+				margin-bottom: 15px
+				font-style: normal */
+  /* .about_contacts
+				font-size: 12px */
 }
 
 .container .resume .about .name {
@@ -301,17 +307,7 @@ body {
   font-size: 10px;
   text-transform: uppercase;
   color: #808080;
-  margin-bottom: 20px;
-}
-
-.container .resume .about .about_address {
-  font-size: 13px;
   margin-bottom: 15px;
-  font-style: normal;
-}
-
-.container .resume .about .about_contacts {
-  font-size: 11px;
 }
 
 .container .resume .about .about_contacts__link {
@@ -651,6 +647,32 @@ body {
   float: right;
   font-size: 40px;
   font-weight: bold;
-  font-weight-padding: 121px;
+}
+
+.mod_1 {
+  display: none;
+  position: fixed;
+  z-ibdex: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content_1 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 80%;
+}
+
+.close_1 {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
