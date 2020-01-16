@@ -277,16 +277,10 @@ body {
 }
 
 .container .resume .about {
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   text-align: center;
   border-bottom: 2px solid #e0e0e0;
-  margin-bottom: 25px;
-  /* /* .about_address
-				font-size: 13px
-				margin-bottom: 15px
-				font-style: normal */
-  /* .about_contacts
-				font-size: 12px */
+  margin-bottom: 0px;
 }
 
 .container .resume .about .name {
@@ -303,16 +297,11 @@ body {
   margin-bottom: 15px;
 }
 
-.container .resume .about .about_contacts__link {
-  color: #777777;
-}
-
 .container .resume .heading_dark {
   font-size: 16px;
   font-weight: 400;
   /* border-bottom: 2px solid #e0e0e0 */
   padding-bottom: 24px;
-  /* margin-bottom: 38px	 */
   font-weight: 700;
 }
 
