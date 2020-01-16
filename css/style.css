@@ -69,6 +69,7 @@ body {
 
 .container .profile_text a {
   color: #fff;
+  text-decoration: none;
 }
 
 .container .profile .heading {
