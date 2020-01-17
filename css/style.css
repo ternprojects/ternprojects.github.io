@@ -315,13 +315,13 @@ body {
 }
 
 .container .resume .list_item__date {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .container .resume .list_item__text {
-  font-size: 13px;
-  color: #777;
+  font-size: 14px;
+  color: #020202;
   margin-top: 0px;
 }
 
@@ -410,7 +410,7 @@ body {
   background: #f5f5f5;
   border-left: 2px solid #ccc;
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
   text-indent: 1.5em;
 }
 
@@ -439,6 +439,7 @@ a:hover {
 
 .copyright {
   padding-top: 20px;
+  font-size: 12px !important;
 }
 
 .paragraph {
