@@ -438,7 +438,7 @@ a:hover {
 }
 
 .copyright {
-  padding-top: 220px;
+  padding-top: 20px;
 }
 
 .paragraph {
@@ -449,7 +449,7 @@ a:hover {
   border-bottom: 2px black solid;
 }
 
-.line_1 {
+.line {
   padding: 0;
   border: none;
   border-top: medium double #333;
