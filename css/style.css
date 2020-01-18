@@ -481,7 +481,7 @@ hr:after {
             flex-direction: column;
   }
   .container .resume_wrap .list_item__title {
-    font-size: 35px;
+    font-size: 12px;
   }
   .container_photo {
     height: 200px;
