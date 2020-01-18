@@ -480,6 +480,9 @@ hr:after {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container .resume_wrap .list_item__title {
+    font-size: 35px;
+  }
   .container_photo {
     height: 200px;
     width: 200px;
@@ -522,9 +525,6 @@ hr:after {
   }
   .container .resume {
     padding: 10px;
-  }
-  .container .resume_wrap .list_item__title {
-    font-size: 35px;
   }
   .container .resume .resume_wrap {
     padding-left: 20px;
