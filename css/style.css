@@ -467,7 +467,7 @@ hr:after {
   background: white;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1080px) {
   .container {
     width: 90%;
   }
