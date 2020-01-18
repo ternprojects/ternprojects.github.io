@@ -467,21 +467,9 @@ hr:after {
   background: white;
 }
 
-@media (max-width: 2340px) {
+@media (max-width: 1024px) {
   .container {
     width: 90%;
-  }
-  .container .resume .resume_wrap .list_item__title {
-    font-size: 35px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1080px) {
-  .container {
-    width: 90%;
-  }
-  .container .resume .resume_wrap .list_item__title {
-    font-size: 35px;
   }
 }
 
@@ -534,6 +522,9 @@ hr:after {
   }
   .container .resume {
     padding: 10px;
+  }
+  .container .resume_wrap .list_item__title {
+    font-size: 35px;
   }
   .container .resume .resume_wrap {
     padding-left: 20px;
