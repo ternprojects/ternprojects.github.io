@@ -471,8 +471,8 @@ hr:after {
   .container {
     width: 90%;
   }
-  .list_item__title {
-    font-size: 11px;
+  .container .resume .resume_wrap .list_item__title {
+    font-size: 14px;
   }
 }
 
