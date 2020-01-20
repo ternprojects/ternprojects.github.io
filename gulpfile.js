@@ -34,7 +34,8 @@ gulp.task('styles', function() {
 //Task "watch"
 gulp.task('watch', function() {
     gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));
-    gulp.watch("./*.html").on("change", browserSync.reload);
+    gulp.watch("./*.html").on("change", browserSync.reload); 
+    gulp.watch("js/*.js").on("change", browserSync.reload);    
 }); 
 
 //Main task "Default: include 3 previous tasks..."
