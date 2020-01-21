@@ -125,7 +125,7 @@ body
 				width: 102px
 				margin-left: 20px
 
-    //sesume side 
+    //Resume side 
 	.resume
 		padding: 25px 30px 
 		flex-basis: 63%
@@ -201,68 +201,10 @@ body
 				font-size: 14px	
 				font-weight: bold												
 			&_item__text			
-				font-size: 14px
+				font-size: 15px
 				color: #777
 				margin-top: 0px		
-		
-/* button with projects*/	
-.button
-	&:before, &:after,
-	span, &:before, &:after
-		transition: all ease .5s		
-.button
-	position: relative
-	display: inline-block
-	padding: 0.3em
-	margin: 1em
-	border: solid 1px
-	text-transform: uppercase
-	cursor: pointer	
-	font-size: 15px	
-	margin-bottom: 20px
-	&:hover
-		box-shadow: 0 0 5em .5em rgba(171,171,171,1)
-	span
-		display: inline-block
-		width: 100%
-		padding: 0.6em 1em
-	&:hover span
-		background-color: #fff
-		color: #112
-	&:before, &:after,
-	&_span:before,
-	&_span:after
-		content: ''
-		position: absolute
-		border: 1px
-	&:before,
-	&_span:before
-		border-style: solid none
-	&:before,
-	&_span:after   
-		left: 0
-		top: -0.4em
-		width: 100%
-		height: calc(100% + 0.8em)
-	&:after,
-	&_span:after
-		border-style: none solid
-	&:after,
-	&_span:before
-		top: 0
-		left: -0.4em
-		height: 100%
-		width: calc(100% + 0.8em)
-	&:hover:after,
-	&:hover span:after
-		transform: scaleY(0)
-	&:hover:before,
-	&:hover span:before
-		transform: scaleX(0)
-	&:hover span:after,
-	&:hover span:before
-		opacity: 0
-
+	
 //"styling text about myself"
 .cite
 	padding: 5px
@@ -271,6 +213,7 @@ body
 	font-style: italic
 	font-size: 14px
 	text-indent: 1.5em
+
 //"styling text about myself"
 .date
 	display: block
@@ -279,26 +222,32 @@ body
 	border-left: 3px solid #ccc
 	font-style: italic
 	font-size: 13px
+
 //"dashed grey border"
 .border
 	display: block
 	border-bottom: 2px dashed #e0e0e0
+
 //link styles
 .links
 	text-decoration: none
 	color: black
 a:hover
 	color: red
+
 //copy
 .copyright
 	padding-top: 20px
 	font-size: 12px !important
+
 //Paragraph-indent
 .paragraph
 	text-indent: 1.5em
+
 //Links border
 .borders	
 	border-bottom: 2px black solid
+
 //line
 .line	 
 	padding: 0
@@ -307,12 +256,18 @@ a:hover
 	color: #333
 	text-align: center	
 hr:after
-	content: "♥♥♥"
+	content: "***"
 	display: inline-block
 	position: relative
 	top: -0.7em
 	font-size: 1.5em
 	padding: 0 0.25em
 	background: white
+
+//button with sertificates
+.centr_button
+	display: flex	
+	justify-content: center
+
 
 

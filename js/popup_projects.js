@@ -1,17 +1,20 @@
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
-const span = document.getElementsByClassName("close")[0];
+const btn = document.querySelector('.button'), // Главная кнопка
+      modal = document.querySelector('.modal'), // Модальное окно
+      closeBtn = document.querySelector('.closeBtn'); // Кнопка, закрывающая модальное окно
+  
+// Открытие модального окна
+btn.addEventListener('click', function() {
+    modal.style.display = 'flex'; 
+})
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// Закрытие модального окна при клике на кнопку
+closeBtn.addEventListener('click', function () {
+	modal.style.display = "none";
+})
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if(event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// Закрытие модального окна при клике на серую область
+window.addEventListener('click', function (e) {
+	if(e.target == modal) {
+   		modal.style.display = "none";
+	}  	
+})
