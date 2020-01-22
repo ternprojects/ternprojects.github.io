@@ -1,0 +1,56 @@
+.buttonW
+	&:before, &:after,
+	span, &:before, &:after
+		transition: all ease .5s		
+.buttonW
+	position: relative
+	display: inline-block
+	padding: 0.3em
+	margin: 1em
+	border: solid 1px
+	text-transform: uppercase
+	cursor: pointer	
+	font-size: 15px	
+	margin-bottom: 20px		
+	&:hover
+		box-shadow: 0 0 5em .5em rgba(171,171,171,1)
+	span
+		display: inline-block
+		width: 100%
+		padding: 0.6em 1em
+	&:hover span
+		background-color: #fff
+		color: #112
+	&:before, &:after,
+	&_span:before,
+	&_span:after
+		content: ''
+		position: absolute
+		border: 1px
+	&:before,
+	&_span:before
+		border-style: solid none
+	&:before,
+	&_span:after   
+		left: 0
+		top: -0.4em
+		width: 100%
+		height: calc(100% + 0.8em)
+	&:after,
+	&_span:after
+		border-style: none solid
+	&:after,
+	&_span:before
+		top: 0
+		left: -0.4em
+		height: 100%
+		width: calc(100% + 0.8em)
+	&:hover:after,
+	&:hover span:after
+		transform: scaleY(0)
+	&:hover:before,
+	&:hover span:before
+		transform: scaleX(0)
+	&:hover span:after,
+	&:hover span:before
+		opacity: 0

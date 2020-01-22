@@ -1,0 +1,17 @@
+.youtube {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.youtube a > img {
+    width: 100%;
+    height: auto;
+}
+
+.youtube a {
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow:  0 0 5px #ccc;
+    display: block;
+    position: relative;
+}
