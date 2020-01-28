@@ -1,20 +1,20 @@
-const btnW = document.querySelector('.buttonW'), // Главная кнопка
-      modalW = document.querySelector('.modalW'), // Модальное окно
-      closeBtnW = document.querySelector('.closeBtnW'); // Кнопка, закрывающая модальное окно
+const 	btnW = document.querySelector('.buttonW'); // Main button
+		modalW = document.querySelector('.modalW'), // Modal window
+		closeBtnW = document.querySelector('.closeBtnW'); // button that closes the modal window
   
-// Открытие модального окна
+// Open modal window
 btnW.addEventListener('click', function() {
-    modalW.style.display = 'flex'; 
+modalW.style.display = 'flex'; 
 })
 
-// Закрытие модального окна при клике на кнопку
+// Close modal window, when pressing the closing
 closeBtnW.addEventListener('click', function () {
-	modalW.style.display = "none";
+modalW.style.display = "none";
 })
 
-// Закрытие модального окна при клике на серую область
+// Close modal window, when pressing the free space
 window.addEventListener('click', function (e) {
 	if(e.target == modalW) {
-   		modalW.style.display = "none";
+  	modalW.style.display = "none";
 	}  	
 })
