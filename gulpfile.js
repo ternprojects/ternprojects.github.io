@@ -21,15 +21,21 @@ gulp.task('styles', function() {
         .pipe(rename({
             prefix: "",
             suffix: ".min",            
-        }))  
-        .pipe(autoprefixer({
+        }))
+
+        ///*Before optimization*///////////////////
+        /*.pipe(autoprefixer({
             browsers: ['last 2 version'],
             cascade: false
-        }))
+        }))*///////////////////////////////////////
+
+        /*After optimiazation*/////////////////////
+        .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("./css"))
         .pipe(browserSync.stream());
-});
+    });
+////////////////////////////////////////////////////
 
 //Task "watch"
 gulp.task('watch', function() {
