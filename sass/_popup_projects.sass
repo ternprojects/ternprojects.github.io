@@ -1,11 +1,12 @@
-.closeBtn		
+.closeBtn
 	float: right
 	font-size: 20px
 	color: white	
-	
+
 .modal	
 	display: none
 	justify-content: center
+	align-items: center
 	top: 0
 	bottom: 0
 	left: 0
@@ -17,26 +18,24 @@
 	overflow: auto
 	.modal-wrapper
 		width: 85%
-		max-width: 100%
-		top: 5%
-		background: rgb(57, 56, 58)
-		position: absolute
+		max-width: 100%	
+		background: rgb(57, 56, 58)		
 		text-align: left
 		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4)
 		animation-name: modalopen
 		animation-duration: 1s
-		transform: rotateX(0deg)  
+		transform: rotateX(0deg)
 		a
-			color: #000			
-			text-decoration: none			
-		a:hover			
-			cursor: pointer	
-			font-weight: bold		
+			color: #000
+			text-decoration: none
+		a:hover
+			cursor: pointer
+			font-weight: bold
 			&:after
-				content: " >>"				
-				backround-color: #000				
-				font-weight: bold		
-		
+				content: " >>"
+				backround-color: #000
+				font-weight: bold
+
 .modal-header, .modal-body, .modal-footer
 	padding: 5px 15px
 
