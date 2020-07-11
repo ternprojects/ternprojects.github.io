@@ -19,7 +19,7 @@
 	.modal-wrapper
 		width: 85%
 		max-width: 100%	
-		background: rgb(57, 56, 58)		
+		background: rgb(57, 56, 58)
 		text-align: left
 		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4)
 		animation-name: modalopen
@@ -34,7 +34,7 @@
 			&:after
 				content: " >>"
 				backround-color: #000
-				font-weight: bold
+				font-weight: bold		
 
 .modal-header, .modal-body, .modal-footer
 	padding: 5px 15px
@@ -55,3 +55,8 @@
 		opacity: 1
 		top: 15%
 		transform: rotateX(0deg)
+
+@media (max-width: 320px)
+	.modal-wrapper
+		position: absolute
+		top: 2% !important
