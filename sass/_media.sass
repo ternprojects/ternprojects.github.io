@@ -1,18 +1,31 @@
 @media (max-width: 1024px)
 	.container
-		width: 90%		
-		/* .modal              //
-			.modal-wrapper  //
-				width: 100% //
-				top: 0%		// 	 */	
-		
+		width: 90%
+		.languages
+			.language
+				&:nth-child(2)
+				  margin-left: 22px
+		.modal
+		.modal-wrapper
+			width: 100%
+			top: 0%
+
 @media (max-width: 992px)
 	.container
-		flex-direction: column	
-		.resume                       //
-			&_wrap                   //
-				.list_item__title     //
-					font-size: 13px	  //
+		flex-direction: column
+		.languages
+			.language
+				&:nth-child(1)
+					margin-right: 0
+				&:nth-child(2)
+					margin-left: 0
+				&:nth-child(3)
+					margin-right: 0
+					margin-bottom: 30px
+		.resume
+			&_wrap
+				.list_item__title
+					font-size: 13px
 		&_photo
 			height: 200px
 			width: 200px
@@ -27,7 +40,7 @@
 				background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(195,195,195,1) 0%, rgba(60,60,60,1) 100%);
 				display: block
 				position: absolute
-			&_photo     
+			&_photo
 				height: 200px
 				width: 200px
 				border: 3px solid #fff
@@ -42,6 +55,10 @@
 @media (max-width: 768px)
 	.container
 		width: 90%
+		.languages
+			.language
+			  &:nth-child(1)
+					margin-right: 0
 		.resume
 			padding: 10px	
 			.resume_wrap
@@ -56,36 +73,34 @@
 					line-height: 1.4
 			.about_contacts__link
 				display: block
-				font-size: 13px	
+				font-size: 13px
 		.modalW
 			.modal-wrapperW
 				width: 85%	
 	
 @media (max-width: 567px)
 	.container
+		.languages
+			.language
+				&:nth-child(1)
+					margin-right: 0
+					margin-bottom: 30px
 		.logo_lines
 			margin-left: 8px
-			margin-right: 8px	
+			margin-right: 8px
 		.profile
 			&_info
-				.languages	
-					justify-content: space-between //
+				.languages
+					justify-content: space-between
 	
-@media (max-width: 480px)	
+@media (max-width: 416px)
 	.container
-		min-width: 320px
-		.profile
-			&_info
-				.languages	
-					justify-content: center 
-					align-items: center
-		.skills_list__item
-			font-size: 13px
+		.languages
+			.language
+				font-size: 13px
+				&:nth-child(3)
+					margin: 0 auto
 		.resume
 			&_wrap
 				.logo
 					display: none
-
-
-	
-		

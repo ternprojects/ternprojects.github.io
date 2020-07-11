@@ -1,20 +1,32 @@
-const btn = document.querySelector('.button'), // Главная кнопка
-      modal = document.querySelector('.modal'), // Модальное окно
-      closeBtn = document.querySelector('.closeBtn'); // Кнопка, закрывающая модальное окно
-  
-// Открытие модального окна
+const btn = document.querySelector('.button'), // Main button
+      modal = document.querySelector('.modal'), // Modal window
+      closeBtn = document.querySelector('.closeBtn'); // Button for close modal window
+
+// Open window-modal
 btn.addEventListener('click', function() {
     modal.style.display = 'flex'; 
 })
 
-// Закрытие модального окна при клике на кнопку
+// Close modal wibdow with click on the cross
 closeBtn.addEventListener('click', function () {
 	modal.style.display = "none";
 })
 
-// Закрытие модального окна при клике на серую область
+// Close modal wibdow with click on the grey area
 window.addEventListener('click', function (e) {
-	if(e.target == modal) {
-   		modal.style.display = "none";
-	}  	
+	if(e.target === modal) {
+  	modal.style.display = "none";
+	}
 })
+
+// Close modal window with "Escape"
+const close = (e) => {
+	if (e.target === document.querySelector(".modal") || e.key === "Escape") {
+		modal.style.display = "none";
+		//document.removeEventListener("keydown", close);
+		console.log('click');
+	}
+};
+
+document.addEventListener("keydown", close);
+
