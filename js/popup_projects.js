@@ -20,7 +20,7 @@ window.addEventListener('click', function (e) {
 })
 
 // Close modal window with "Escape"
-const close = (e) => {
+/* const close = (e) => {
 	if (e.target === document.querySelector(".modal") || e.key === "Escape") {
 		modal.style.display = "none";
 		//document.removeEventListener("keydown", close);
@@ -28,5 +28,5 @@ const close = (e) => {
 	}
 };
 
-document.addEventListener("keydown", close);
+document.addEventListener("keydown", close); */
 
