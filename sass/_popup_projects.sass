@@ -30,14 +30,13 @@
 		a
 			color: #000
 			text-decoration: none
-		a:hover
+		a:hover,
+		a:focus
 			cursor: pointer
-			font-weight: bold
-			&:after
-				content: " >>"
-				backround-color: #000
-				font-weight: bold		
-
+			text-decoration: underline
+			&:before
+				content: '\2714  '
+				
 .modal-header, .modal-body, .modal-footer
 	padding: 5px 15px
 

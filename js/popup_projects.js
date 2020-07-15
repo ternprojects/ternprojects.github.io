@@ -3,8 +3,8 @@ const btn = document.querySelector('.button'), // Main button
       closeBtn = document.querySelector('.closeBtn'); // Button for close modal window
 
 // Open window-modal
-btn.addEventListener('click', function() {
-    modal.style.display = 'flex'; 
+btn.addEventListener('click', function () {
+    modal.style.display = "flex"; 
 })
 
 // Close modal wibdow with click on the cross
@@ -22,8 +22,7 @@ window.addEventListener('click', function (e) {
 // Close modal window with "Escape"
 /* const close = (e) => {
 	if (e.target === document.querySelector(".modal") || e.key === "Escape") {
-		modal.style.display = "none";
-		//document.removeEventListener("keydown", close);
+		modal.style.display = "none";	
 		console.log('click');
 	}
 };

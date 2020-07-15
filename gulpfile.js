@@ -1,9 +1,18 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync');
-const sass = require('gulp-sass');
-const rename = require("gulp-rename");
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
+      browserSync = require('browser-sync');
+      sass = require('gulp-sass');
+      rename = require("gulp-rename");
+      autoprefixer = require('gulp-autoprefixer');
+      cleanCSS = require('gulp-clean-css');
+
+      /* rigger = require('gulp-rigger'); */
+
+//Task "Rigger"
+/* gulp.task('rigger', function () {
+    gulp.src('./html/*.html')
+        .pipe(rigger())
+        .pipe(gulp.dest('./index.html'));
+}) */
 
 //Task "server"
 gulp.task('server', function() {
@@ -20,7 +29,7 @@ gulp.task('styles', function() {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
         .pipe(rename({
             prefix: "",
-            suffix: ".min",            
+            suffix: ".min",
         }))
 
         ///*Before optimization*///////////////////
@@ -39,9 +48,9 @@ gulp.task('styles', function() {
 
 //Task "watch"
 gulp.task('watch', function() {
-    gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));
-    gulp.watch("./*.html").on("change", browserSync.reload); 
-    gulp.watch("js/*.js").on("change", browserSync.reload);    
+  gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));
+  gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("js/*.js").on("change", browserSync.reload);
 }); 
 
 //Main task "Default: include 3 previous tasks..."
