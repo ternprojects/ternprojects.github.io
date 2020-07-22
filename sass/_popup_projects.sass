@@ -1,7 +1,15 @@
 .closeBtn
-	float: right
-	font-size: 20px
-	color: white	
+	position: absolute
+	right: 8px
+	top: -4px
+	height: 20px
+	width: 20px	
+	font-size: 30px
+	color: white
+	font-weight: 900
+	cursor: pointer
+	&:hover
+	  color: #000
 
 .modal	
 	display: none
@@ -16,9 +24,9 @@
 	background: rgba(0, 0, 0, 0.6)
 	z-index: 999
 	overflow: auto
-	.modal-wrapper		
+	.modal-wrapper
 		width: 65%
-		max-width: 100%	
+		max-width: 100%
 		position: absolute
 		top: 2%
 		background: rgb(57, 56, 58)
@@ -30,14 +38,12 @@
 		a
 			color: #000
 			text-decoration: none
+			transition: margin-left .1s linear
 		a:hover,
 		a:focus
 			cursor: pointer
-			text-decoration: underline
-			color: #fff
-			&:before
-				backround-color: #000
-				
+			margin-left: 15px
+
 .modal-header, .modal-body, .modal-footer
 	padding: 5px 15px
 
