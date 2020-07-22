@@ -16,7 +16,7 @@
 	z-index: 999
 	overflow: auto
 	.modal-wrapperW
-		width: 30%
+		width: 50%
 		max-width: 100%
 		position: absolute
 		top: 2%
@@ -29,14 +29,14 @@
 		a
 			color: #000
 			text-decoration: none
-		a:hover
+		a:hover,
+		a:focus
 			cursor: pointer
-			font-weight: bold
-			&:after
-				content: " >>"
+			text-decoration: underline
+			color: #fff
+			&:before
 				backround-color: #000
-				font-weight: bold
-		
+
 .modal-headerW, .modal-bodyW, .modal-footerW
 	padding: 5px 15px
 

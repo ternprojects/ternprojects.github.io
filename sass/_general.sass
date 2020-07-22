@@ -183,24 +183,25 @@ body
 				font-size: 12px
 				text-transform: uppercase	
 				color: #808080
-				margin-bottom: 15px			    
+				margin-bottom: 15px
 
 		.heading_dark	
 			font-size: 16px
-			font-weight: 400			
-			padding-bottom: 18px				
+			font-weight: 400
+			padding-bottom: 18px
 			font-weight: 700
 
 		.list
 			list-style: none
-			padding-left: 0px			
-			&_item__title				
-				font-size: 14px							
-				margin-bottom: 12px		
+			padding-left: 0px
+			font-weight: 600
+			&_item__title
+				font-size: 14px
+				margin-bottom: 12px
 			&_item__date
 				font-size: 14px	
 				font-weight: bold
-			&_item__text			
+			&_item__text
 				font-size: 15px
 				color: #777
 				margin-top: 0px
@@ -240,9 +241,11 @@ a:hover
 	color: red
 
 //copy
-.copyright
+.copyright p
 	padding-top: 10px
 	font-size: 12px !important
+	text-align: center
+	padding-left: 0 !important
 	
 //paragraph-indent
 .paragraph
@@ -274,10 +277,12 @@ a:hover
 
 //academy
 .academy
-	display: inline-block		
+	display: inline-block
 	margin-bottom: 10px
 	background: #b8b8b8	
-	font-size: 14px
+	font-size: 14px	
+	&:hover
+		text-decoration: underline
 
 //block element
 .span
@@ -289,7 +294,7 @@ a:hover
 	text-transform: uppercase
 	margin-bottom: 10px
 	font-style: italic
-	background: #b8b8b8	
+	background: #b8b8b8
 	text-align: center
 
 //padding
@@ -299,4 +304,7 @@ a:hover
 //bottom
 .button-bottom
 	padding-top: 70px
+
+.no-scroll
+	overflow-y: hidden
 
