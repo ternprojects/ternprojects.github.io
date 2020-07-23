@@ -1,36 +1,38 @@
+'use strict';
+
 const btn = document.querySelector('.button'), // Main button
-      modal = document.querySelector('.modal'), // Modal window
-	    closeBtn = document.querySelector('.closeBtn'); // Button for close modal window
-      html = document.querySelector('html');
+	    modal = document.querySelector('.modal'), // Modal window
+	    closeBtn = document.querySelector('.closeBtn'), // Button for close modal window
+      htmlW = document.querySelector('html') //tag
 
 // Open window-modal
-btn.addEventListener('click', function () {	
-	modal.style.display = "flex"; 	
-	html.classList.add('no-scroll');
-  window.addEventListener("keydown", close);
+btn.addEventListener('click', function () {
+	modal.style.display = 'flex';
+	htmlW.classList.add('no-scroll');
+	window.addEventListener("keydown", close);
 })
 
 // Close modal wibdow with click on the cross
-  closeBtn.addEventListener('click', function () {
-	  modal.style.display = "none";
-	  html.classList.remove('no-scroll');
+closeBtn.addEventListener('click', function () {
+	modal.style.display = 'none';
+	htmlW.classList.remove('no-scroll');
 })
 
 // Close modal wibdow with click on the grey area
 window.addEventListener('click', function (e) {
 	if (e.target === modal) {
-		modal.style.display = "none";
-		html.classList.remove('no-scroll');	
+		modal.style.display = 'none';
+		htmlW.classList.remove('no-scroll');
 	}
 })
 
 // Close modal window with "Escape"
 const close = function (e) {
 	if (e.target === document.querySelector(".modal") || e.key === "Escape") {
-		modal.style.display = "none";		
+		modal.style.display = 'none';
 		console.log('click');
 		window.removeEventListener("keydown", close);
-		html.classList.remove('no-scroll');
+		htmlW.classList.remove('no-scroll');
 	}
 }
 
