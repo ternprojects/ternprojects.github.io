@@ -5,14 +5,20 @@ const gulp = require('gulp');
       autoprefixer = require('gulp-autoprefixer');
       cleanCSS = require('gulp-clean-css');
 
-      /* rigger = require('gulp-rigger'); */
+      /* 
+      rigger = require('gulp-rigger'); 
+      */
 
 //Task "Rigger"
-/* gulp.task('rigger', function () {
+
+/* 
+    gulp.task('rigger', function () {
     gulp.src('./html/*.html')
         .pipe(rigger())
         .pipe(gulp.dest('./index.html'));
-}) */
+    }) 
+
+*/
 
 //Task "server"
 gulp.task('server', function() {
@@ -32,18 +38,21 @@ gulp.task('styles', function() {
             suffix: ".min",
         }))
 
-        ///*Before optimization*///////////////////
+        /*Before optimization*/
+        //////////////////////////////////////////
         /*.pipe(autoprefixer({
             browsers: ['last 2 version'],
             cascade: false
-        }))*///////////////////////////////////////
+        }))*/
+        /////////////////////////////////////////
 
-        /*After optimiazation*/////////////////////
+        //After optimiazation////////////////////
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("./css"))
         .pipe(browserSync.stream());
     });
+
 ////////////////////////////////////////////////////
 
 //Task "watch"
