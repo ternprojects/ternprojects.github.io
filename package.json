@@ -1,27 +1,24 @@
 {
-  "name": "ternprojects.github.io",
+  "name": "src",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "browser-sync": "^2.27.4",
-    "g": "^2.0.1",
-    "gulp-rigger": "^0.5.8"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ternprojects/ternprojects.github.io.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ternprojects/ternprojects.github.io/issues"
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
   },
-  "homepage": "https://github.com/ternprojects/ternprojects.github.io#readme"
+  "dependencies": {
+    "g": "^2.0.1",
+    "gulp-rigger": "^0.5.8"
+  }
 }
