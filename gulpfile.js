@@ -4,21 +4,7 @@ const gulp = require('gulp');
       rename = require("gulp-rename");
       autoprefixer = require('gulp-autoprefixer');
       cleanCSS = require('gulp-clean-css');
-
-      /* 
-      rigger = require('gulp-rigger'); 
-      */
-
-//Task "Rigger"
-
-/* 
-    gulp.task('rigger', function () {
-    gulp.src('./html/*.html')
-        .pipe(rigger())
-        .pipe(gulp.dest('./index.html'));
-    }) 
-
-*/
+      //rigger = require('gulp-rigger');
 
 //Task "server"
 gulp.task('server', function() {
@@ -36,28 +22,28 @@ gulp.task('styles', function() {
         .pipe(rename({
             prefix: "",
             suffix: ".min",
-        }))
+        }))        
 
-        /*Before optimization*/
-        //////////////////////////////////////////
-        /*.pipe(autoprefixer({
-            browsers: ['last 2 version'],
-            cascade: false
-        }))*/
-        /////////////////////////////////////////
-
-        //After optimiazation////////////////////
+//After optimiazation////////////////////
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("./css"))
         .pipe(browserSync.stream());
     });
 
-////////////////////////////////////////////////////
+//Task "Rigger"
+/*
+    gulp.task('rigger', function () {
+        gulp.src('templates/m.html')
+            .pipe(rigger())
+            .pipe(gulp.dest('build/'));
+    }) 
+*/
+
 
 //Task "watch"
 gulp.task('watch', function() {
-  gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));
+  gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));  
   gulp.watch("./*.html").on("change", browserSync.reload);
   gulp.watch("js/*.js").on("change", browserSync.reload);
 }); 
