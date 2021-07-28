@@ -50,3 +50,4 @@ gulp.task('watch', function() {
 
 //Main task "Default: include 3 previous tasks..."
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+
