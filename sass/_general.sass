@@ -191,6 +191,7 @@ a:hover
 				text-transform: uppercase	
 				color: #808080
 				margin-bottom: 15px
+				display: block
 
 		.heading_dark
 			font-size: 16px
@@ -291,10 +292,6 @@ a:hover
 	&:hover
 		text-decoration: underline		
 
-//block element
-.span
-	display: block	
-
 //specialty
 .web
 	display: block
@@ -331,36 +328,7 @@ a:hover
 .no-scroll
 	overflow-y: hidden
 
-.profile details .uk::after
-	content: "" 
-	background-image: url('../img/flags-icons/uk.png')
-	display: block
-	position: absolute
-	width: 32px
-	height: 32px
-	left: 62px
-	bottom: -3px 
-
-.profile details .eng::after
-	content: "" 
-	background-image: url('../img/flags-icons/eng.png')
-	display: block
-	position: absolute
-	width: 32px
-	height: 32px
-	left: 65px
-	bottom: -5px
-
-.profile details .ru::after
-	content: "" 
-	background-image: url('../img/flags-icons/ru.png')
-	display: block
-	position: absolute
-	width: 32px
-	height: 32px
-	left: 50px
-	bottom: -6px
-
+//details
 details p
 	position: relative
 	margin-top: 20px
@@ -373,10 +341,25 @@ details a
 details a:hover
 	color: #fff
 
+//w3c-button
 .w3c
 	text-align: center
 
-.border_style
-	border-bottom: solid
-	border-top: solid
-	
+//Lang
+.border_style__lang	
+	border-bottom: 1px solid
+	width: 200px
+	border-top: 1px solid
+	margin: auto 
+	margin-bottom: 10px
+
+.lang_align
+	margin: 5px	
+	text-align: center
+
+//top_scroll
+.topNubex
+	position: fixed
+	right: 45px
+	bottom: 45px
+   
