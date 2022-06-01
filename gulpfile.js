@@ -40,7 +40,6 @@ gulp.task('styles', function() {
     }) 
 */
 
-
 //Task "watch"
 gulp.task('watch', function() {
   gulp.watch("./sass/*.+(scss|sass)", gulp.parallel('styles'));  
@@ -50,5 +49,3 @@ gulp.task('watch', function() {
 
 //Main task "Default: include 3 previous tasks..."
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
-
-                                                 
