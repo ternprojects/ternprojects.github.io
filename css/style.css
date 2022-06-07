@@ -474,7 +474,7 @@ p {
   margin-left: 1rem;
 }
 
-.swiper h5 {
+.swiper h4 {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
@@ -1256,7 +1256,7 @@ p {
   text-decoration: underline;
 }
 
-.swiper-slide h3 {
+.swiper-slide h4 {
   text-align: center;
   margin-top: 15px;
 }
@@ -1265,7 +1265,7 @@ p {
   width: auto;
 }
 
-#display h3 {
+#display h4 {
   margin-bottom: 35px;
 }
 
@@ -2027,7 +2027,7 @@ form textarea:focus::placeholder {
     height: 200px;
   }
 
-  .swiper-slide h3 {
+  .swiper-slide h4 {
     font-size: 14px;
   }
 
