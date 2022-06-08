@@ -1266,7 +1266,7 @@ p {
 }
 
 #display h4 {
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
 .modal {
@@ -2437,6 +2437,11 @@ form textarea:focus::placeholder {
 
   #display {
     width: 290px;
+  }
+
+  #display .swiper-button-prev::after,
+  #display .swiper-button-next::after {
+    margin-bottom: 10px;
   }
 
   #display .swiper-slide img {
