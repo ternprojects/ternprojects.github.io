@@ -1640,10 +1640,6 @@ p {
   max-width: 900px;
 }
 
-.modal__title {
-  text-align: left;
-}
-
 .modal__subtitle {
   text-transform: uppercase;
   font-size: 1.06rem;
@@ -1902,6 +1898,14 @@ form textarea:focus::placeholder {
   .about__bigtitle {
     font-size: 4rem;
   }
+
+  .modal .btn {
+    width: 200px;
+  }
+
+  .contact .btn {
+    width: 30%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2036,9 +2040,8 @@ form textarea:focus::placeholder {
   }
 
   .modal .btn {
-    width: 30%;
     padding: 1rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .modal__dialog--sm {
@@ -2328,10 +2331,6 @@ form textarea:focus::placeholder {
   .modal-work__title {
     font-size: 1.5rem;
   }
-
-  .contact .btn {
-    width: 30%;
-  }
 }
 
 @media (max-width: 767px) and (max-width: 565px) {
@@ -2527,7 +2526,7 @@ form textarea:focus::placeholder {
   }
 
   .modal__title {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
