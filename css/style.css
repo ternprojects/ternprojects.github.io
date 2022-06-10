@@ -1819,7 +1819,7 @@ p {
   -o-transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .contact .btn:focus {
@@ -2490,8 +2490,8 @@ form textarea:focus::placeholder {
     margin-bottom: 40px;
   }
 
-  .modal .btn:not(:last-child) {
-    margin-bottom: 20px;
+  .modal .btn {
+    margin-top: 20px;
   }
 
   .modal .btn:last-child {
