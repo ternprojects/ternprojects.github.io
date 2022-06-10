@@ -2495,10 +2495,6 @@ form textarea:focus::placeholder {
     margin-bottom: 20px;
   }
 
-  .modal .btn:last-child {
-    margin-left: 0;
-  }
-
   .modal .timeline {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
