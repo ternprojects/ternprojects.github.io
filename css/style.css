@@ -2492,7 +2492,7 @@ form textarea:focus::placeholder {
   }
 
   .modal .btn:not(:last-child) {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .modal .btn:last-child {
