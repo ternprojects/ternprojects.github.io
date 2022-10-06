@@ -616,10 +616,6 @@ p {
   display: none !important;
 }
 
-.works__nav-link:nth-child(5) {
-  border: dotted;
-}
-
 .about {
   margin: 5rem 0;
 }
