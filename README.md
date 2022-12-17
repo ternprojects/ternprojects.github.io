@@ -1,3 +1,3 @@
 # ternprojects.github.io
 
-New version project (v. 2.0)
+Version v. 2.0
