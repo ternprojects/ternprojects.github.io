@@ -877,6 +877,11 @@ p {
   display: block;
 }
 
+hr {
+  border: 1px solid lightgray;
+  margin: 10px 0;
+}
+
 .news {
   margin: 0rem 0 8rem 0;
 }
