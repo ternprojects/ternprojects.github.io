@@ -882,6 +882,23 @@ hr {
   margin: 10px 0;
 }
 
+.one {
+  list-style-type: "1.";
+  margin-left: 15px;
+  padding-left: 5px;
+}
+
+.two {
+  list-style-type: "2.";
+  margin-left: 15px;
+  padding-left: 5px;
+}
+
+ol > li {
+  list-style-type: disc;
+  margin: 0 20px;
+}
+
 .news {
   margin: 0rem 0 8rem 0;
 }
