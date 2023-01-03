@@ -616,6 +616,10 @@ p {
   display: none !important;
 }
 
+.works__nav-link:nth-child(6) {
+  border: dotted 2px;
+}
+
 .about {
   margin: 5rem 0;
 }
@@ -882,16 +886,18 @@ hr {
   margin: 10px 0;
 }
 
-.one {
-  list-style-type: "1.";
+.one,
+.two {
   margin-left: 15px;
   padding-left: 5px;
 }
 
+.one {
+  list-style-type: "1.";
+}
+
 .two {
   list-style-type: "2.";
-  margin-left: 15px;
-  padding-left: 5px;
 }
 
 ol > li {
