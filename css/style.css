@@ -906,7 +906,7 @@ ol > li {
 }
 
 .news {
-  margin: 0rem 0 8rem 0;
+  margin: 0rem 0 4rem 0;
 }
 
 .news__header {
@@ -1079,6 +1079,10 @@ ol > li {
 .footer {
   padding: 1rem 0;
   background-color: #2b2a2c;
+}
+
+.footer__counter {
+  margin-left: 50%;
 }
 
 .footer__inner {
@@ -2551,6 +2555,9 @@ form textarea:focus::placeholder {
     margin-right: 0;
     margin-bottom: 1.5rem;
     border-right: 0;
+    text-align: center;
+    width: 70%;
+    line-height: 1.5;
   }
 
   #display {
